@@ -1,0 +1,66 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif; /* Set the font family */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Set height to full viewport height */
+    background-color: #f4f4f4; /* Set background color */
+}
+
+/* Centers the title of the website */
+.centered-text {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 10vh; /* Set height to 10% of viewport height */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set the font family */
+}
+
+/* Center boxes outline */
+.container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items evenly */
+    height: 500px; /* Set fixed height */
+    width: 1000px; /* Set fixed width */
+    max-width: 2000px; /* Set maximum width */
+}
+
+/* Creates the left and right boxes with specific dimensions */
+.left-box, .right-box {
+    width: 20%; /* Set width to 20% of container */
+    background-color: #ddd; /* Set background color */
+    padding: 20px; /* Add padding */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Center box dimensions */
+.center-box {
+    width: 55%; /* Set width to 55% of container */
+    background-color: #fff; /* Set background color */
+    padding: 20px; /* Add padding */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center text */
+}
+
+/* Adds multiple images that cycle */
+.image-slider img {
+    width: 100%; /* Set width to 100% of parent */
+    height: auto; /* Maintain aspect ratio */
+    display: none; /* Hide all images by default */
+}
+
+/* This displays the first image */
+.image-slider img:first-child {
+    display: block; /* Display the first image */
+}

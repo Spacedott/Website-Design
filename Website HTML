@@ -6,46 +6,60 @@
     <title>My Webpage</title>
     <!-- Embedded CSS -->
     <style>
-        .box{
-            justify-content: space-between;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .nav {
-            width: 20%;
-            background-color: #f0f0f0;
-        }
-        .content {
-            width: 50%;
-            background-color: #ffffff;
-            text-align: center;
-        }
-        .news {
-            width: 20%;
-            background-color: #f9f9f9;
-        }
-        .nav, .content, .news {
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .centered-text{
+    /* Centering boxes and images in the webpage */
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    /* Centers the title of the website */
+    .centered-text{
             display: flex;
             justify-content: center;
             align-items: center;
             height: 10vh;
             margin: 0;
             font-family: Arial, sans-serif;
-        }
-        .left-links {
-            text-align: left;
-            margin-left: 20px;
-        }
-        .left-links a {
-            display: block;
-            margin: 10px 0;
-            text-decoration: none;
-            color: #000;
-        }
+    }
+    /* Center boxes outline */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        height: 500px;
+        width: 1000px;
+        max-width: 2000px;
+    }
+    /* Creates the left and right boxes with specific dimensions */
+    .left-box, .right-box {
+        width: 20%;
+        background-color: #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    /* Center box dimensions */
+    .center-box {
+        width: 55%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    /* Adds multiple images that cycle */    
+    .image-slider img {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+    /* This blocks the other images from displaying */
+    .image-slider img:first-child {
+        display: block;
+    }
+       
     </style>
 </head>
 <body>
@@ -54,35 +68,50 @@
         <div class="centered-text">
         <h1>Building PCs</h1>
         </div>
-    <nav>
-        <div class="nav">
-    <ul>
-        <a href="https://example.com">Example Link 1</a>
-        <a href="https://example.com">Example Link 2</a>
-        <a href="https://example.com">Example Link 3</a>
-    </ul>
-        </div>
-    </nav>
     
     <main>
-        <section>
-            <!-- This is div exists so we have a border around the content  -->
-             <div class="content centered-text">
-                <div class="box">Images go here</div>
-             </div>
-
-            <h2>About Me</h2>
-            <p>This is a section where you can write about yourself.</p>
-        </section>
+        <div class="container">
+            <!-- Left Box -->
+            <div class="left-box">
+                <h3>Links to tutorials</h3>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                </ul>
+            </div>
+    
+            <!-- Center Box -->
+            <div class="center-box">
+                <h3>Cyclying Images</h3>
+                <div class="image-slider">
+                    <img src="cycling1.jpg" alt="Cycling 1">
+                    <img src="cycling2.jpg" alt="Cycling 2">
+                    <img src="cycling3.jpg" alt="Cycling 3">
+                </div>
+            </div>
+    
+            <!-- Right Box -->
+            <div class="right-box">
+                <h3>Latest Updates</h3>
+                <ul>
+                    <li>Update 1</li>
+                    <li>Update 2</li>
+                    <li>Update 3</li>
+                </ul>
+            </div>
+        </div>
         <section class="photo-gallery">
-            <h2>Photo Gallery</h2>
+            <h2>Success Stories</h2>
             <img src="photo1.jpg" alt="Photo 1">
             <img src="photo2.jpg" alt="Photo 2">
             <img src="photo3.jpg" alt="Photo 3">
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 My Webpage. All rights reserved.</p>
+        <p>&copy; Building PCs Inc. All rights reserved.</p>
     </footer>
 </body>
 </html>

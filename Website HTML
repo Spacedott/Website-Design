@@ -69,10 +69,11 @@
         <h1>Building PCs</h1>
         </div>
     
-    <main>
+    <main>   
         <div class="container">
             <!-- Left Box -->
             <div class="left-box">
+            <!-- Lists the links in a top-down format -->
                 <h3>Links to tutorials</h3>
                 <ul>
                     <li><a href="#">Link 1</a></li>
@@ -85,6 +86,7 @@
     
             <!-- Center Box -->
             <div class="center-box">
+            <!-- Adds the cycling of photos to the center box -->
                 <h3>Cyclying Images</h3>
                 <div class="image-slider">
                     <img src="cycling1.jpg" alt="Cycling 1">
@@ -95,6 +97,7 @@
     
             <!-- Right Box -->
             <div class="right-box">
+            <!-- Will add pictures or links to updates in tech -->
                 <h3>Latest Updates</h3>
                 <ul>
                     <li>Update 1</li>
@@ -103,6 +106,7 @@
                 </ul>
             </div>
         </div>
+        <!-- This section will add pictures of success stories and satisfied customers -->
         <section class="photo-gallery">
             <h2>Success Stories</h2>
             <img src="photo1.jpg" alt="Photo 1">
@@ -110,6 +114,7 @@
             <img src="photo3.jpg" alt="Photo 3">
         </section>
     </main>
+    <!-- Footer to include basic copyright and legal information -->
     <footer>
         <p>&copy; Building PCs Inc. All rights reserved.</p>
     </footer>
